@@ -1,0 +1,10 @@
+{
+  "name": "learn-browser",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "create_index": "node ./scripts/create_index.js",
+    "rm_page": "node ./scripts/rm_page.js --update-index",
+    "new_page": "node ./scripts/new_page.js"
+  }
+}

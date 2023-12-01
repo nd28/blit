@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detect Browser Agent</title>
+    <style>
+      body {
+        font-family: "new york";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h2>Learning Browser</h2>
+      <small><a href="../index.html">INDEX</a></small>
+    </header>
+
+    <main>
+      <h2>Using window object</h2>
+      <section class="browser-agent">
+        <pre>
+  Browser: {
+    IE:     !!(window.attachEvent &&
+      navigator.userAgent.indexOf('Opera') === -1),
+    Opera:  navigator.userAgent.indexOf('Opera') > -1,
+    WebKit: navigator.userAgent.indexOf('AppleWebKit/') > -1,
+    Gecko:  navigator.userAgent.indexOf('Gecko') > -1 &&
+      navigator.userAgent.indexOf('KHTML') === -1,
+    MobileSafari: !!navigator.userAgent.match(/Apple.*Mobile.*Safari/)
+  }
+        </pre>
+      </section>
+    </main>
+  </body>
+</html>
