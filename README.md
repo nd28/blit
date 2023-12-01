@@ -12,6 +12,10 @@
 
 It has zero external package dependency so having node installed is more than needed. 😆
 
+
+Serve page http-server with watch mode on.
+Or Use VS Code's Live Server
+
 #### Page layout is modifying index template.
 
 `vim template/index.html`
